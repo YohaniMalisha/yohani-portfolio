@@ -47,7 +47,8 @@ export function Skills() {
       { name: 'Docker', level: 70 },
       { name: 'Agile Methodology', level: 85 },
       { name: 'REST APIs', level: 88 },
-      { name: 'GraphQL', level: 72 }
+      { name: 'GraphQL', level: 72 },
+      { name: 'AI Chatbots', level: 60 }
     ],
     design: [
       { name: 'Figma', level: 90 },

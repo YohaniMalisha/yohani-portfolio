@@ -64,7 +64,7 @@ export function Hero() {
               {/* Image container */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-900 bg-gray-800">
                 <ProfileImage
-                  src="/assets/profile.jpg"
+                  src="/yohani-portfolio/assets/profile.jpg"
                   alt="K.D Yohani Malisha Wimalasena"
                   initials="YW"
                   className="w-full h-full transition-transform duration-300 group-hover:scale-110"
@@ -88,7 +88,7 @@ export function Hero() {
             className="mb-6"
           >
             <span className="inline-block px-6 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/50 rounded-full text-blue-300 backdrop-blur-sm">
-              Associate Frontend Developer
+              Junior Full-Stack Developer
             </span>
           </motion.div>
 
@@ -139,7 +139,7 @@ export function Hero() {
               asChild
             >
               <a
-                href="/assets/Associate%20Frontend%20Developer%20(2).pdf"
+                href="/yohani-portfolio/assets/Associate%20Frontend%20Developer%20(2).pdf"
                 download
               >
                 <Download className="mr-2" size={18} />

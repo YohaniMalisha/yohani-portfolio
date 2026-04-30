@@ -6,7 +6,7 @@ export function Experience() {
   const timeline = [
     {
       type: 'work',
-      title: 'Associate Full-Stack Developer',
+      title: 'Junior Full-Stack Developer',
       organization: 'Hyperdim Innovation (Pvt) Ltd',
       location: 'Singapore',
       period: '2025 - Present',

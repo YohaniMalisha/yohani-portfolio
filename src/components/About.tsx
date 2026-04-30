@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+﻿import { motion } from "motion/react";
 import { Code2, Palette, Zap, Users, Target, Award } from "lucide-react";
 
 export function About() {
@@ -64,19 +64,10 @@ export function About() {
             className="glass-effect rounded-2xl p-8 md:p-12 mb-12 border border-gray-700"
           >
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              I’m Yohani Malisha Wimalasena, an enthusiastic and detail-oriented
-              Software Engineering undergraduate with hands-on experience in
-              frontend and full-stack development. I’m passionate about building
-              modern, user-friendly, and visually appealing web applications
-              using technologies like React.js, TypeScript, and Node.js, along
-              with strong backend knowledge in Python (Django) and SQL.
+              I'm Yohani Malisha Wimalasena, an undergraduate pursuing a Bachelor of Information Technology (Hons) in Software Engineering. I have hands-on experience in frontend and full-stack development, working with React.js, TypeScript, Node.js, and backend technologies like Python (Django) and SQL.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I enjoy turning creative ideas into functional digital experiences
-              and have a growing interest in UI/UX design, AI integration, and
-              cloud-based solutions. With a solid foundation in programming,
-              problem-solving, and project management, I’m eager to contribute
-              to innovative projects that make a real impact.
+              I'm passionate about building modern, user-focused applications and continuously improving my skills in UI/UX design, AI integration, and cloud technologies.
             </p>
           </motion.div>
 

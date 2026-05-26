@@ -64,7 +64,7 @@ export function Hero() {
               {/* Image container */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-900 bg-gray-800">
                 <ProfileImage
-                  src="/yohani-portfolio/assets/profile.jpg"
+                  src="/assets/profile.jpg"
                   alt="K.D Yohani Malisha Wimalasena"
                   initials="YW"
                   className="w-full h-full transition-transform duration-300 group-hover:scale-110"
@@ -123,26 +123,29 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 animate-pulse-glow"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold shadow-lg hover:shadow-2xl"
               asChild
             >
-              <a href="#projects">View My Work</a>
+              <a href="#projects" className="flex items-center">
+                View My Work
+              </a>
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:border-blue-500 px-8"
+              className="border-2 border-gray-600 text-white hover:border-blue-500 hover:bg-gray-800/70 font-bold"
               asChild
             >
               <a
-                href="/yohani-portfolio/assets/Associate%20Frontend%20Developer%20(2).pdf"
+                href="/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf"
                 download
+                className="flex items-center gap-2"
               >
-                <Download className="mr-2" size={18} />
+                <Download size={20} />
                 Download CV
               </a>
             </Button>

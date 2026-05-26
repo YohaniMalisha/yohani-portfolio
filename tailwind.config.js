@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -11,7 +8,7 @@ module.exports = {
         ring: "#3b82f6",
       },
       animation: {
-        "float": "float 6s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
@@ -27,4 +24,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
 interface ProfileImageProps {
-  src?: string
-  alt?: string
-  initials?: string
-  className?: string
+  src?: string;
+  alt?: string;
+  initials?: string;
+  className?: string;
 }
 
 export function ProfileImage({
@@ -13,10 +13,12 @@ export function ProfileImage({
   initials = "YW",
   className = "",
 }: ProfileImageProps) {
-  const [imageError, setImageError] = React.useState(!src)
+  const [imageError, setImageError] = React.useState(!src);
 
   return (
-    <div className={`relative w-full h-full rounded-full overflow-hidden ${className}`}>
+    <div
+      className={`relative w-full h-full rounded-full overflow-hidden ${className}`}
+    >
       {!imageError && src ? (
         <img
           src={src}
@@ -30,5 +32,5 @@ export function ProfileImage({
         </div>
       )}
     </div>
-  )
+  );
 }

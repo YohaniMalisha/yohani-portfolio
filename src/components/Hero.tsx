@@ -142,7 +142,9 @@ export function Hero() {
               asChild
             >
               <a
-                href={getAssetPath("/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf")}
+                href={getAssetPath(
+                  "/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf",
+                )}
                 download
                 className="flex items-center gap-2"
               >

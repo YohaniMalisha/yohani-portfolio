@@ -114,6 +114,26 @@ export function Projects() {
       featured: false,
       github: "#",
       demo: "#",
+      status: "completed",
+    },
+    {
+      title: "InvoiceX – Full-Stack Invoice Management Platform",
+      description:
+        "Modern invoice management platform with secure authentication, real-time synchronization, and RESTful APIs. Features Firebase Authentication, SQLite database, Docker containerization, and Google Cloud Run deployment.",
+      image: getAssetPath("/assets/invoiceX.png"),
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "Firebase",
+        "SQLite",
+        "Docker",
+        "Google Cloud Run",
+      ],
+      featured: true,
+      github: "#",
+      demo: "#",
+      status: "completed",
     },
   ];
 
@@ -164,10 +184,16 @@ export function Projects() {
               >
                 <Card className="bg-gray-800 border-gray-700 hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col group hover:shadow-lg hover:shadow-blue-500/20">
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
-                    {project.featured && (
+                    {project.featured && !project.status && (
                       <div className="absolute top-3 right-3 z-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs flex items-center gap-1">
                         <Star size={12} fill="currentColor" />
                         Featured
+                      </div>
+                    )}
+                    {project.status === "completed" && (
+                      <div className="absolute top-3 right-3 z-10 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-3 py-1 rounded-full text-xs flex items-center gap-1">
+                        <Star size={12} fill="currentColor" />
+                        Completed
                       </div>
                     )}
                     <ImageWithFallback
@@ -200,8 +226,7 @@ export function Projects() {
                   </CardContent>
                   {project.title === "Velora Elder Care Official Website" ||
                   project.title === "e-Kitchen E-commerce Platform" ||
-                  project.title === "e-Kitchen Admin Panel" ||
-                  project.title === "Tourists Transport Management System" ? (
+                  project.title === "e-Kitchen Admin Panel" ? (
                     <CardFooter className="flex gap-2">
                       <Button
                         size="sm"

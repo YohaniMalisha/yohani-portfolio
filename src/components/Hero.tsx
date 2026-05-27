@@ -168,18 +168,23 @@ export function Hero() {
               >
                 {/* Gradient background effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                
+
                 {/* Card content */}
                 <div className="relative glass-effect rounded-xl p-6 border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
                   <div className="mb-3 flex justify-center">
                     <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 group-hover:from-blue-500/40 group-hover:to-purple-500/40 transition-all duration-300">
-                      <stat.icon className="text-blue-400 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300" size={32} />
+                      <stat.icon
+                        className="text-blue-400 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300"
+                        size={32}
+                      />
                     </div>
                   </div>
                   <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-gray-300 font-semibold text-sm uppercase tracking-wide">{stat.label}</div>
+                  <div className="text-gray-300 font-semibold text-sm uppercase tracking-wide">
+                    {stat.label}
+                  </div>
                   {stat.label === "Experience" && stat.details && (
                     <div className="text-xs text-gray-400 mt-3 pt-3 border-t border-gray-700/50 whitespace-pre-line leading-relaxed">
                       {stat.details}

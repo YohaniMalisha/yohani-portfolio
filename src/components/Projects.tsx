@@ -18,7 +18,7 @@ export function Projects() {
       title: "Astraleon Tech official website",
       description:
         "A modern website for Astraleon Tech, focused on developing and selling websites. Built with React, TypeScript, Tailwind CSS, and integrated with EmailJS for contact and inquiries.",
-      image: "/assets/astraleon.png",
+      image: "./assets/astraleon.png",
       tags: ["React", "TypeScript", "Tailwind CSS", "EmailJS"],
       featured: true,
       github: "#",
@@ -28,7 +28,7 @@ export function Projects() {
       title: "BISD International official website",
       description:
         "A modern website for a BIM solutions provider, built with React and Vite. Features dedicated pages for civil, mechanical, and BIM solutions, showcasing the company’s expertise in commercial, industrial, and infrastructure projects.",
-      image: "/assets/bisd.png",
+      image: "./assets/bisd.png",
       tags: [
         "React",
         "Vite",
@@ -46,7 +46,7 @@ export function Projects() {
       title: "My SLT Web Portal",
       description:
         "Customer self-service portal for Sri Lanka Telecom with account management, bill payments, and service requests functionality.",
-      image: "/assets/slt.png",
+      image: "./assets/slt.png",
       tags: ["React", "TypeScript", "REST API", "Responsive Design"],
       featured: true,
       github: "#",
@@ -56,7 +56,7 @@ export function Projects() {
       title: "Lakmal Products Jaggery Website",
       description:
         "A modern, responsive website for Lakmal Products, showcasing traditional jaggery products, company story, and online inquiries.",
-      image: "/assets/jaggery.png",
+      image: "./assets/jaggery.png",
       tags: ["React", "TypeScript", "Tailwind CSS", "Company Website"],
       featured: true,
       github: "#",
@@ -66,7 +66,7 @@ export function Projects() {
       title: "Hyperdim Innovation Official Website",
       description:
         "Modern corporate website featuring AI-powered chatbot integration, responsive design, and dynamic content management for enhanced user engagement.",
-      image: "/assets/hyperdim.png",
+      image: "./assets/hyperdim.png",
       tags: ["React", "TypeScript", "AI Integration", "Tailwind CSS"],
       featured: true,
       github: "#",
@@ -77,7 +77,7 @@ export function Projects() {
       title: "Velora Elder Care Official Website",
       description:
         "A luxury-level eldercare website for Velora, designed to showcase premium services, facilities, and care options for seniors. Built with TypeScript and Tailwind CSS for a modern, elegant user experience.",
-      image: "/assets/velora.png",
+      image: "./assets/velora.png",
       tags: ["TypeScript", "Tailwind CSS", "Luxury Eldercare"],
       featured: true,
       github: "#",
@@ -98,7 +98,7 @@ export function Projects() {
       title: "e-Kitchen Admin Panel",
       description:
         "Admin dashboard for managing products, orders, users, and analytics for the e-Kitchen platform. Includes secure authentication and real-time updates.",
-      image: "/assets/e admin.jpeg",
+      image: "./assets/e admin.jpeg",
       tags: ["React", "TypeScript", "Tailwind CSS", "Admin Dashboard"],
       featured: true,
       github: "#",
@@ -108,7 +108,7 @@ export function Projects() {
       title: "Tourists Transport Management System",
       description:
         "Comprehensive travel booking platform with destination browsing, itinerary planning, and booking management capabilities.",
-      image: "/assets/transport.png",
+      image: "./assets/transport.png"
       tags: ["React", "Python", "Django", "MySQL"],
       featured: false,
       github: "#",

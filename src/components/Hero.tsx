@@ -64,7 +64,7 @@ export function Hero() {
               {/* Image container */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-900 bg-gray-800">
                 <ProfileImage
-                  src="/assets/profile.jpg"
+                  src="./assets/profile.jpg"
                   alt="K.D Yohani Malisha Wimalasena"
                   initials="YW"
                   className="w-full h-full transition-transform duration-300 group-hover:scale-110"
@@ -141,7 +141,7 @@ export function Hero() {
               asChild
             >
               <a
-                href="/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf"
+                href="./assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf"
                 download
                 className="flex items-center gap-2"
               >
@@ -156,7 +156,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto px-4"
+            className="flex flex-col sm:grid sm:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto px-4 w-full"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -164,13 +164,13 @@ export function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.7 + index * 0.1 }}
-                className="group relative"
+                className="group relative flex flex-col items-center"
               >
                 {/* Gradient background effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
 
                 {/* Card content */}
-                <div className="relative glass-effect rounded-xl p-6 border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
+                <div className="relative glass-effect rounded-xl p-6 border border-white/10 group-hover:border-blue-400/50 transition-all duration-300 w-full text-center">
                   <div className="mb-3 flex justify-center">
                     <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 group-hover:from-blue-500/40 group-hover:to-purple-500/40 transition-all duration-300">
                       <stat.icon

@@ -64,7 +64,7 @@ export function Hero() {
               {/* Image container */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-900 bg-gray-800">
                 <ProfileImage
-                  src="/yohani-portfolio/assets/profile.jpg"
+                  src="/assets/profile.jpg"
                   alt="K.D Yohani Malisha Wimalasena"
                   initials="YW"
                   className="w-full h-full transition-transform duration-300 group-hover:scale-110"
@@ -141,7 +141,7 @@ export function Hero() {
               asChild
             >
               <a
-                href="/yohani-portfolio/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf"
+                href="/assets/K.D%20Yohani%20M.%20Wimalasena%20-%20Full%20Stack%20Web%20Developer.pdf"
                 download
                 className="flex items-center gap-2"
               >

@@ -156,7 +156,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto px-4"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -164,18 +164,28 @@ export function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.7 + index * 0.1 }}
-                className="glass-effect rounded-lg p-6 hover:bg-white/10 transition-all duration-300"
+                className="group relative"
               >
-                <stat.icon className="mx-auto mb-2 text-blue-400" size={28} />
-                <div className="text-2xl md:text-3xl bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-                {stat.label === "Experience" && stat.details && (
-                  <div className="text-xs text-gray-400 mt-2 whitespace-pre-line">
-                    {stat.details}
+                {/* Gradient background effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                
+                {/* Card content */}
+                <div className="relative glass-effect rounded-xl p-6 border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
+                  <div className="mb-3 flex justify-center">
+                    <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 group-hover:from-blue-500/40 group-hover:to-purple-500/40 transition-all duration-300">
+                      <stat.icon className="text-blue-400 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300" size={32} />
+                    </div>
                   </div>
-                )}
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-gray-300 font-semibold text-sm uppercase tracking-wide">{stat.label}</div>
+                  {stat.label === "Experience" && stat.details && (
+                    <div className="text-xs text-gray-400 mt-3 pt-3 border-t border-gray-700/50 whitespace-pre-line leading-relaxed">
+                      {stat.details}
+                    </div>
+                  )}
+                </div>
               </motion.div>
             ))}
           </motion.div>
